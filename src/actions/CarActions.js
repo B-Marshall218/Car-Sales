@@ -8,3 +8,13 @@ export function updateFeature(newFeature) {
         payload: newFeature
     };
 }
+
+export const REMOVE_FEATURE = "REMOVE_FEATURE";
+
+export function removeFeature(featureId) {
+    console.log(featureId);
+    return {
+        type: REMOVE_FEATURE,
+        payload: featureId
+    };
+}
